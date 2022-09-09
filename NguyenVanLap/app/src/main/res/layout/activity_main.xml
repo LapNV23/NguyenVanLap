@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter feedback details to send to the developer:"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Anne Droid"
+            android:background="@color/white"
+            />
+        <EditText
+            android:id="@+id/etGmail"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="laptddz@gmail.com"
+            android:background="@color/white"
+            />
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:id="@+id/etDes"
+            android:background="@color/white"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ckBox"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="Would you like an email response?"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFeedback"
+            android:text="Send Feedback"
+            android:background="#FF9800"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>
